@@ -28,3 +28,9 @@ class Probability_Histogram:
 
     def __rmul__(self, other):
         return self.handle_function(other, np.multiply)
+
+    def __add__(self, other):
+        return self.handle_function(other, np.add)
+
+    def __radd__(self, other):
+        return self.handle_function(other, np.add)
